@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36203.30
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-DeepgramSpeechToText", "01-DeepgramSpeechToText\01-DeepgramSpeechToText.csproj", "{2F897DD9-4FDD-4310-8BBD-E0A67F2BEF4A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-HuggingFaceSentimentAnalysis", "02-HuggingFaceSentimentAnalysis\02-HuggingFaceSentimentAnalysis.csproj", "{7716ADEF-ED89-4FC1-BB47-22143D3B9828}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2F897DD9-4FDD-4310-8BBD-E0A67F2BEF4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F897DD9-4FDD-4310-8BBD-E0A67F2BEF4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F897DD9-4FDD-4310-8BBD-E0A67F2BEF4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7716ADEF-ED89-4FC1-BB47-22143D3B9828}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7716ADEF-ED89-4FC1-BB47-22143D3B9828}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7716ADEF-ED89-4FC1-BB47-22143D3B9828}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7716ADEF-ED89-4FC1-BB47-22143D3B9828}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
