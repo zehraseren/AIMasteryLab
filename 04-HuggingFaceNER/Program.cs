@@ -29,20 +29,24 @@ class Program
             //var response = await client.PostAsync("https://api-inference.huggingface.co/models/Jean-Baptiste/roberta-large-ner-english", content);
             var responseString = await response.Content.ReadAsStringAsync();
 
+            // NER ham çıktısını ekrana yazdırıe (JSON formatında)
             Console.WriteLine("NER Output: ");
             Console.WriteLine(responseString);
 
+            // JSON çıktısını parse eder ve token'ları sırayla işler
             var doc = JsonDocument.Parse(responseString);
             foreach (var item in doc.RootElement.EnumerateArray())
             {
-                string entity = item.GetProperty("entity_group").GetString();
-                string word = item.GetProperty("word").GetString();
-                double score = Math.Round(item.GetProperty("score").GetDouble() * 100, 2);
+                // Entity bilgilerini JSON'dan alır
+                string entity = item.GetProperty("entity_group").GetString();               // PER, ORG, LOC vs.
+                string word = item.GetProperty("word").GetString();                         // Kelime/token
+                double score = Math.Round(item.GetProperty("score").GetDouble() * 100, 2);  // Güven skoru (%)
+
+                // Konsola çıktıyı yazdırır
                 Console.WriteLine($" -->  {word}");
                 Console.WriteLine($"       |Type: {entity}");
                 Console.WriteLine($"       |Score: {score}%");
             }
-            ;
         }
 
     }
