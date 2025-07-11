@@ -48,4 +48,4 @@ Galatasaray Teknik Direktörü Okan Buruk, UEFA Şampiyonlar Ligi maçında Real
 ```
 
 ### 🔗 Kaynaklar
-+ (Hugging Face - savasy/bert-base-turkish-ner-cased)[https://huggingface.co/savasy/bert-base-turkish-ner-cased]
++ [Hugging Face - savasy/bert-base-turkish-ner-cased](https://huggingface.co/savasy/bert-base-turkish-ner-cased)
