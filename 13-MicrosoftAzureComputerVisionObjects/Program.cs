@@ -1,0 +1,69 @@
+﻿using System.Text.Json;
+using System.Net.Http.Headers;
+
+class Program
+{
+    static async Task Main(string[] args)
+    {
+        // Analiz edilecek görselin dosya yolu
+        string imagePath = "YOUR_IMAGE_PATH_HERE";
+
+        // Azure portalından alınan abonelik anahtarı
+        string subscriptionKey = "YOUR_SUBSCRIPTION_KEY_HERE";
+
+        // Azure Computer Vision hizmetine ait uç nokta (endpoint)
+        string endpoint = "YOUR_ENDPOINT_HERE";
+
+        // API adresi ve istenen parametrelerle birlikte URI oluşturulur
+        string apiUrl = $"{endpoint}/vision/v3.2/analyze";
+        string requestParameters = "visualFeatures=Categories,Description,Tags,Color,Faces,Objects,Brands,Adult,ImageType&language=en&model-version=latest";
+        string uri = $"{apiUrl}?{requestParameters}";
+
+        // Görsel dosyasının varlığı kontrol edilir
+        if (!File.Exists(imagePath))
+        {
+            Console.WriteLine($"Görsel dosyası bulunamadı: {imagePath}");
+            return;
+        }
+
+        // Görsel dosyası byte dizisine çevrilir
+        byte[] imageBytes = await File.ReadAllBytesAsync(imagePath);
+        using (HttpClient client = new HttpClient())
+
+        using (ByteArrayContent content = new ByteArrayContent(imageBytes))
+        {
+            // Authorization header eklenir (Doğru olan Subscription-Key başlığı!)
+            client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", subscriptionKey);
+
+            // İçerik tipi olarak binary stream (octet-stream) belirtilir
+            content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
+
+            // API'ye POST isteği gönderilir
+            HttpResponseMessage response = await client.PostAsync(uri, content);
+            string result = await response.Content.ReadAsStringAsync();
+
+            // Eğer başarılıysa, gelen JSON verisi işlenir
+            if (response.IsSuccessStatusCode)
+            {
+                Console.WriteLine("Azure Yanıtı:");
+                JsonDocument json = JsonDocument.Parse(result);
+
+                // Caption (görsel açıklaması) analizi
+                var objects = json.RootElement.GetProperty("objects");
+                foreach (var obj in objects.EnumerateArray())
+                {
+                    string name = obj.GetProperty("object").GetString();
+                    double confidence = obj.GetProperty("confidence").GetDouble();
+                    Console.WriteLine($"Nesne: {name} (Güven: %{confidence * 100:0.00})");
+                }
+            }
+            else
+            {
+                // Hata durumunda durum kodu ve hata mesajı yazdırılır
+                Console.WriteLine("Bir hata oluştu!");
+                Console.WriteLine($"Status: {response.StatusCode}");
+                Console.WriteLine("Yanıt: " + result);
+            }
+        }
+    }
+}

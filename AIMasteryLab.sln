@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-MicrosoftAzureTextToSpee
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-MicrosoftAzureComputerVision", "12-MicrosoftAzureComputerVision\12-MicrosoftAzureComputerVision.csproj", "{9CA7134A-3613-4BED-BA1B-AC103CCFE599}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13-MicrosoftAzureComputerVisionObjects", "13-MicrosoftAzureComputerVisionObjects\13-MicrosoftAzureComputerVisionObjects.csproj", "{0FEE8DA8-4646-4FFF-AB15-10D7C596E528}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{9CA7134A-3613-4BED-BA1B-AC103CCFE599}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CA7134A-3613-4BED-BA1B-AC103CCFE599}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CA7134A-3613-4BED-BA1B-AC103CCFE599}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FEE8DA8-4646-4FFF-AB15-10D7C596E528}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FEE8DA8-4646-4FFF-AB15-10D7C596E528}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FEE8DA8-4646-4FFF-AB15-10D7C596E528}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FEE8DA8-4646-4FFF-AB15-10D7C596E528}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
