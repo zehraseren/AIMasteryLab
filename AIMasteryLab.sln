@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-MicrosoftAzureComputerVi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13-MicrosoftAzureComputerVisionObjects", "13-MicrosoftAzureComputerVisionObjects\13-MicrosoftAzureComputerVisionObjects.csproj", "{0FEE8DA8-4646-4FFF-AB15-10D7C596E528}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14-GoogleGeminiQnA", "14-GoogleGeminiQnA\14-GoogleGeminiQnA.csproj", "{5486DB58-4B61-452A-A221-4060D28F37FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{0FEE8DA8-4646-4FFF-AB15-10D7C596E528}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FEE8DA8-4646-4FFF-AB15-10D7C596E528}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FEE8DA8-4646-4FFF-AB15-10D7C596E528}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5486DB58-4B61-452A-A221-4060D28F37FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5486DB58-4B61-452A-A221-4060D28F37FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5486DB58-4B61-452A-A221-4060D28F37FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5486DB58-4B61-452A-A221-4060D28F37FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
