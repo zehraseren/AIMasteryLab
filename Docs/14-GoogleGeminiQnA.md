@@ -1,4 +1,4 @@
-# 14-Google Gemini Question Answering with 1.5 Pro
+# ❓🗨️ Google Gemini Question Answering with 1.5 Pro
 ### 🎯 Proje Hakkında  
 Bu projede, Google Gemini 1.5 Pro modeli kullanılarak basit ama güçlü bir .NET C# konsol uygulaması geliştirildi. Kullanıcı, konsola bir soru yazar ve Gemini'den gelen akıllı cevabı anında ekranda görür.
 
