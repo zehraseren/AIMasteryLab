@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13-MicrosoftAzureComputerVi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14-GoogleGeminiQnA", "14-GoogleGeminiQnA\14-GoogleGeminiQnA.csproj", "{5486DB58-4B61-452A-A221-4060D28F37FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15-GoogleGeminiRoleSimulation", "15-GoogleGeminiRoleSimulation\15-GoogleGeminiRoleSimulation.csproj", "{5F6C278E-4944-4D1E-ABB8-69204B871E22}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{5486DB58-4B61-452A-A221-4060D28F37FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5486DB58-4B61-452A-A221-4060D28F37FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5486DB58-4B61-452A-A221-4060D28F37FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F6C278E-4944-4D1E-ABB8-69204B871E22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F6C278E-4944-4D1E-ABB8-69204B871E22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F6C278E-4944-4D1E-ABB8-69204B871E22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F6C278E-4944-4D1E-ABB8-69204B871E22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
