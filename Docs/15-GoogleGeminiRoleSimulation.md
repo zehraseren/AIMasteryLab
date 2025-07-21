@@ -4,15 +4,18 @@ Bu proje, Google Gemini API'sini kullanarak farklı rollerde sohbet edebileceği
 
 ### 🚀 Özellikler
 + Rol Seçimi: Uygulama başlangıcında farklı roller arasından seçim yapabilme.
++ Dinamik Prompt Oluşturma: Seçilen role ve kullanıcının sorusuna göre Gemini API'ye gönderilecek prompt'un otomatik olarak oluşturulması.
++ Gemini API Entegrasyonu: gemini-1.5-pro modelini kullanarak yapay zeka destekli yanıtlar alma.
++ Konsol Tabanlı Arayüz: Basit ve kullanımı kolay konsol arayüzü.
 
-Dinamik Prompt Oluşturma: Seçilen role ve kullanıcının sorusuna göre Gemini API'ye gönderilecek prompt'un otomatik olarak oluşturulması.
-
-Gemini API Entegrasyonu: gemini-1.5-pro modelini kullanarak yapay zeka destekli yanıtlar alma.
-
-Konsol Tabanlı Arayüz: Basit ve kullanımı kolay konsol arayüzü.
-
-### 💡 Öğrendiklerim
-+ 
+### 🎓 Roller ve Prompt Davranışı
+| Rol| Açıklama |
+|-|-|
+| Psikolog | Sakin, empatik, terapötik yanıtlar |
+| Maç Yorumcusu | Coşkulu, atmosferi yansıtan açıklamalar |
+| Yatırım Danışmanı | Ekonomik analiz ve stratejik tavsiyeler |
+| Tarihçi | Akademik, kaynak odaklı tarih anlatımı |
+| Turist Rehberi | Şehir kültürü ve gezilecek yer önerileri |
 
 ### 🔧 Kurulum ve Kullanım 
 1. Google Gemini hesabı oluşturun
@@ -51,8 +54,3 @@ Mutlaka Denemeniz Gereken Lezzetler:
 + C# (async/await pattern)
 + Google Gemini 1.5 Pro API
 + `HttpClient`, `JsonSerializer`, `JsonDocument`
-
-
-
-
-
