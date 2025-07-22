@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17-OpenAICodeEditorApp", "1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18-StabilityAIStableDiffusion", "18-StabilityAIStableDiffusion\18-StabilityAIStableDiffusion.csproj", "{95C0B39E-5066-41E7-9546-057CD00420BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19-ReplicateAICreateVideoFromPrompt", "19-ReplicateAICreateVideoFromPrompt\19-ReplicateAICreateVideoFromPrompt.csproj", "{FBBE8F4D-3AAE-447A-8A8A-2BEF7D252224}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{95C0B39E-5066-41E7-9546-057CD00420BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95C0B39E-5066-41E7-9546-057CD00420BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95C0B39E-5066-41E7-9546-057CD00420BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBBE8F4D-3AAE-447A-8A8A-2BEF7D252224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBBE8F4D-3AAE-447A-8A8A-2BEF7D252224}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBBE8F4D-3AAE-447A-8A8A-2BEF7D252224}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBBE8F4D-3AAE-447A-8A8A-2BEF7D252224}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
