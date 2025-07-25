@@ -4,7 +4,7 @@ Bu repoda, farklı yapay zekâ platformlarını kullanarak geliştirdiğim `20 m
 ### 🎯 Amaç
 Yapay zekâ entegrasyonları konusundaki yetkinliğimi artırmak, farklı API'leri uygulamalı olarak deneyimlemek ve AI destekli yazılım çözümleri üretmektir. Tüm projeler .NET (C#) altyapısı kullanılarak geliştirilmiştir.
 
-### 🧠 Kullanılan Yapay Zekâ Servisleri
+### 🧠 Kullanılan Yapay Zeka Servisleri
 ###### [📁 Her projeye özel açıklamalara ve örneklere Docs klasöründen ulaşabilirsiniz.](https://github.com/zehraseren/AIMasteryLab/tree/master/Docs)
 #### ✅ Deepgram AI
 + Gerçek zamanlı ses-metin dönüşümü
